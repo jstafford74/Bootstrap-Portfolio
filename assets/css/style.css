@@ -1,3 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("../images/bluesky.jpg") !important;
+  background-repeat: round; 
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 3px;
+  width:1260px; */
+  
+}
+
+.container {
+    display: flex;                  /* | inline-flex */
+    flex-direction: column;            /* | row-reverse | column | column-reverse;*/
+    flex-wrap: nowrap;              /* | wrap | wrap-reverse;*/
+    justify-content: flex-start;    /* | flex-end | center | space-between | space-around | space-evenly;*/
+    align-items: stretch;            /* | flex-start | flex-end | center | baseline;*/
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width:50% !important;
+    margin-left:25%;
+    margin-top:5%;
+    
+  }
+    
+div.col-md-4{
+  max-height:40%;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+
+}
+  .item {
+    order: 0;            /* default is 0 */
+    flex: 0 1 auto;      /*[ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] -> Recommended shorthand */
+  }
+
+  .parent {
+    display: flex;
+    flex-direction:vertical;
+    justify-content:flex-start;
+    margin-left:25%;
+    margin-top:5%;
+    width:50%;
+    border:1.25px solid #dddddd;
+    padding:15px;
+  }
+  
+  .child {
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
+  }
+
+  .flex-container {
+    display: flex;                  /* We first create a flex layout context */
+    flex: row nowrap;              /* Direction & Wrap */
+    justify-content:space-between;  /* justify-content: space-between;    Then we define how is distributed the remaining space */
+    width:100%;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid silver; */
+  }
+  
+ #urname{
+  width: 150px;
+  height:80px;
+  margin-left:25%;
+  background-color:#4aaaa5;
+  color:#ffffff;
+  /* border:1px solid black; */
+  text-align:center;
+  font-size:1.7rem;
+  
+ }
+
+ #nav{
+   width:25%;
+   float:inline-start;
+   margin-top:50px;
+   margin-right:21%
+ }
+ #nav-item {
+   width:70px;
+   height:30px;
+   color:#333;
+   display:inline-block;
+   margin-top:0px;
+   
+ }
+ #nav-item:hover {
+  background-color:red;
+  
+}
+
+ 
+ input[type=text], select, textarea {
+  width: 100%;
+  display:flex;
+  flex:1 0 auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:#ccc;
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #4aaaa5;
+}
+
+.col-25 {
+  width: 15%;
+ }
+
+.col-75 {
+   flex:1 0 auto;
+ }
+
+ form{
+   flex:1 0 auto;
+ }
+
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  width:100%;
+}
+
 .top1 {
  object-fit:contain;
   background-color:#FFFFFF;
@@ -6,7 +160,18 @@
 }
 
 p.lead{
-  background-color:#4aaaa5;
+  background-image: url("../images/bluesky.jpg") !important;
+  background-repeat:round;
+  justify-content:center;
+  margin-left:40px
+  
+}
+
+div.col-12{
+  font-size:4em;
+}
+div.col-xs-12.col-sm-6.col-md-4 {
+  font-size:2em;
 }
 
 .gallery {
@@ -37,3 +202,192 @@ p.lead{
     object-fit:contain;
 
   }
+
+    
+    
+    
+
+  header{
+    border-bottom: .5px solid #cccccc;
+    background-color:#ffffff;
+    padding:0;
+    width:62%;
+    margin-left:13%;
+    height:100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float:left;
+    font-size:.8em;
+    }
+
+  ul{
+    width:400px;
+    height:50px;
+    list-style-type: none;
+    margin-top:40px;
+    background-color:#ffffff;
+    float:right;
+
+   }
+
+  li{
+      width: 100px;
+      height: 25px;
+      color:silver;
+      border: 0;
+      padding-top: 10;
+      margin-left:5px;
+      text-align:center;
+      background-color:#ffffff;
+      float:right;
+
+    }
+  
+    strong{
+        background-color:#ffffff;
+    }
+  
+  h2{
+    color:#4aaaa5;
+    width:100%;
+    padding:0;
+    border-bottom:1px solid gray;
+    margin:0;
+
+    }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:#ccc;
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #4aaaa5;
+}
+
+
+.col-25 {
+  /* float: left; */
+  /* clear:right; */
+  width: 15%;
+  /* margin-top: 6px; */
+}
+
+.col-75 {
+  /* float: left; */
+  width: 100%;
+  /* margin-top: 6px; */
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Style the content */
+    .content {
+      background-color: #ffffff;
+      width:76%;
+      margin-left:8%;
+      height: 800px; 
+    }
+    
+    
+    footer {
+        padding: 0px;
+        background-color:#666666;
+        margin: 0px;
+        color:#ffffff;
+        text-align:center;
+        width:100%;
+        max-height:40px; 
+        bottom: 0vh;
+        position:fixed;
+    }
+
+    .divp {
+      font-size:1em
+    }
+
+    #urname{
+        width: 25%;
+        height:65px;
+        background-color: #4aaaa5;
+        margin-top:50px;
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style:bold;
+        text-align:center;
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    /* .flex-container {
+        display: flex;                
+        flex-flow: row nowrap;
+        align-items:flex-end;
+        margin-top:-15px;
+   */
+    }
+    .flex-item {
+        /* flex: 1 0 10px; */
+        order:1;
+        background-color:#ffffff;
+        margin-top:26px;
+        margin-bottom:0px;
+    }
+
+    .push {
+        margin-left: auto;
+        margin-top: 0;
+    }
+    #form1{
+        margin-top:0;
+        margin-left:0;
+    }
+  
