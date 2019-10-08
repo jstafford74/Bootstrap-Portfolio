@@ -1,8 +1,8 @@
 # Bootstrap-Portfolio
 Assignment One Instructions (Bootstrap)
 
-# Deployed Link: 
-## https://jstafford74.github.io/Bootstrap-Portfolio/
+## Deployed Link: 
+### https://jstafford74.github.io/Bootstrap-Portfolio/
 
 Inside your Bootstrap-Portfolio repo, create index.html, portfolio.html and contact.html.
 
