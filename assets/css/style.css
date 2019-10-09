@@ -36,7 +36,13 @@ body {
 }
 
  
-
+#contact{
+  /* font-family:'Rock Salt', cursive; */
+  color: blue;
+  /* font-family: 'Nothing You Could Do', cursive;  */
+  font-family: 'Jura', sans-serif; 
+   
+}
  
  input[type=text], select, textarea {
   width: 100%;
@@ -155,3 +161,7 @@ input[type=submit]:hover {
     background-color: black;
   }
 }
+
+ /* font-family: 'Rock Salt', cursive;
+font-family: 'Nothing You Could Do', cursive;
+font-family: 'Jura', sans-serif; */
